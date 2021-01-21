@@ -15,3 +15,8 @@ func TestIsBinarySearchTree_Nil(t *testing.T) {
 	var node *Node
 	assert.True(t, IsBinarySearchTree(node))
 }
+
+func TestIsBinarySearchTree_OneNode(t *testing.T) {
+	node := NewNode(5, nil, nil)
+	assert.True(t, IsBinarySearchTree(node))
+}

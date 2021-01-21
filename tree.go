@@ -18,5 +18,5 @@ func IsBinarySearchTree(node *Node) bool {
 	if node == nil {
 		return true
 	}
-	return false
+	return true
 }
