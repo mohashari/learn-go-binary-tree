@@ -20,3 +20,12 @@ func TestIsBinarySearchTree_OneNode(t *testing.T) {
 	node := NewNode(5, nil, nil)
 	assert.True(t, IsBinarySearchTree(node))
 }
+
+func TestIsBinarySearchTree_Not_TwoLevel(t *testing.T) {
+	node := NewNode(
+		1,
+		NewNode(2, nil, nil),
+		NewNode(3, nil, nil),
+	)
+	assert.False(t, IsBinarySearchTree(node))
+}
